@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/BMI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="@string/bmi_calculator"
+        android:textColor="@color/dark_blue"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/height"
+        android:layout_width="366dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:autofillHints=""
+        android:background="@drawable/custom"
+        android:hint="@string/cm"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="366dp"
+        android:layout_height="96dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom"
+        android:hint="@string/kg"
+        android:textColor="@color/white"
+        android:textColorHint="@color/gray"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:hint="@string/result"
+        android:textColor="@color/dark_blue"
+        android:textColorHint="@color/dark_blue"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/Calculate"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="@color/dark_blue"
+        android:hint="@string/Calc"
+        android:background="@drawable/corrnertwo"
+        android:textColorHint="@color/light_blue"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</LinearLayout>
